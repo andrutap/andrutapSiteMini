@@ -424,32 +424,18 @@ textarea {
   justify-content: flex-start;
   z-index: 10;
   align-items: center; }
-  .navbar.is-active > .is-navbar-toggle {
-    transform: rotate(45deg);
-    transition: transform 0.3s ease; }
-  .navbar .is-navbar-toggle {
-    width: 40px;
-    height: 40px;
-    border-radius: 0;
-    transform: rotate(0deg);
-    float: right;
-    align-self: center;
-    transition: transform 0.3s ease; }
-  .navbar-holder.is-menu {
-    display: block;
-    font-weight: lighter;
-    font-size: 1rem;
-    background-color: #ff0f3b;
-    margin-left: -1rem; }
-    .navbar-holder.is-menu .item a {
-      display: inline-block;
-      padding: 0.5rem 2rem;
-      text-align: right; }
-      .navbar-holder.is-menu .item a:focus, .navbar-holder.is-menu .item a:hover {
-        background-color: rgba(255, 255, 255, 0.125); }
-      @media screen and (max-width: 768px) {
-        .navbar-holder.is-menu .item a {
-          padding: 0.5rem 0.5rem; } }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      margin-top: 3rem; } }
+  .navbar .is-navbar-menu {
+    writing-mode: sideways-lr; }
+    @media screen and (max-width: 768px) {
+      .navbar .is-navbar-menu {
+        writing-mode: lr; } }
+    .navbar .is-navbar-menu .item a {
+      font-size: 3rem; }
+      .navbar .is-navbar-menu .item a:focus, .navbar .is-navbar-menu .item a:hover {
+        background-color: #ff0f3b; }
 
 .route.is-active {
   background: #ff0f3b;

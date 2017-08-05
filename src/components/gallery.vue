@@ -39,8 +39,7 @@ export default {
   },
   methods: {
     moveRight () {
-      this.counter++
-      this.counter = this.counter % this.paths.length
+      this.counter = this.counter === this.paths.length - 1 ? 0 : this.counter + 1
     },
     moveLeft () {
       this.counter = this.counter === 0 ? this.paths.length - 1 : this.counter - 1

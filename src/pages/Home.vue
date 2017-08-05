@@ -3,11 +3,7 @@
     <section class="box is-fluid is-fullscreen">
       <div class="row is-reverse-mobile">
         <div class="tile">
-          <nav class="navbar element is-centered _relative">
-            <div class="is-navbar-menu">
-              <span class="item">Lab</span>
-            </div>
-          </nav>
+          <navbar></navbar>
         </div>
         <div class="tile">
           <h1 class="text is-huge">Hola<span class="text is-orange">.</span></h1>
@@ -28,6 +24,7 @@
 
 <script>
   import gallery from '@/components/gallery'
+  import navbar from '@/components/navbar'
   export default {
     data () {
       return {
@@ -35,7 +32,8 @@
       }
     },
     components: {
-      gallery
+      gallery,
+      navbar
     }
   }
 
