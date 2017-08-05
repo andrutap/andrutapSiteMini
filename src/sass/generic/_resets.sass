@@ -1,0 +1,27 @@
+*,
+*:after,
+*:before
+  box-sizing: border-box
+
+body,
+html
+  margin: 0
+  font-family: 'Montserrat', sans-serif
+  font-size: $font-size
+  line-height: $line-height
+  height: 100vh
+  background: hsl(160, 6%, 97%)
+
+a
+  color: inherit
+  text-decoration: none
+
+img
+  border-style: none
+
+@for $i from 1 through 6
+  h#{$i}
+    +handheld
+      margin:
+        top: .5em
+        bottom: .5em

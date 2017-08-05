@@ -1,0 +1,32 @@
+button,
+[type='button'],
+.button
+  -ms-appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  margin: 0
+  padding: 0
+  border: 0
+  cursor: pointer
+  border-radius: 2em
+
+.button
+  @each $key, $color in $list
+    &.#{$key}
+      background: $color
+      border-color: $color
+      font-weight: lighter
+      color: white
+      +hf
+        box-shadow: $shadow-default
+  &.is-next
+    border-radius: 0
+    float: right
+
+.tile
+  button,
+  [type='button'],
+  .button
+    left: 50%
+    transform: translateX(-50%)
